@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container1{
+    border-radius: 0 0 94% 97%/0  0 50% 50%;
+
+ 
+}
+.card i{
+    font-size: 2rem;
+    color: white;
+}
+.card{
+    border: 0;
+}
+.cont1{
+    background-color: skyblue;
+
+}
+.hero{
+position: relative;  
+margin:1.5rem 0rem;
+cursor: pointer;
+
+}
+.hero img{
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 3px 6px grey;
+}
+
+
+.overlay{
+    background-color:rgb(0, 70, 161);
+    opacity: 0;
+    position: absolute;
+    top:0;
+    content:"";
+    left:0;
+   
+    color:white;
+    z-index: 2;
+    width:100%;
+    border-radius: 8px;
+   
+    transition: all 0.3s linear;
+    height:100%;
+}
+.overlay h4{
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 100;
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+.hero:hover .overlay{
+opacity: 0.8;
+}
+.container2{
+    width:800px;
+    margin:auto;
+}
+ul{
+    list-style: none;
+}
+.card-shadow{
+    box-shadow: 0px 3px 10px rgba(0 0 0 /0.3);
+}
+@media only screen and (max-width:768px)
+{
+    .container2{
+        width:100%;
+    }
+}
+@media only screen and (max-width:560px)
+{
+    .cards{
+        margin:1rem 0rem;
+    }
+ 
+}
+.col-12 h5{
+    font-size: 1rem;
+    color:rgb(206, 206, 206);
+}
+.col-12 ul li {
+    font-size: 0.9rem;
+    margin: 0.6rem 0rem;
+}
+.col-12 ul li a{
+    text-decoration: none;
+    color:rgb(206, 206, 206);
+}
+.col-12 ul li a:hover{
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+.icons i{
+    margin:0.2rem;
+    font-size: 1.4rem;
+}
