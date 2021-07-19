@@ -2,12 +2,35 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+  
     font-family: sans-serif;
 }
-.container1{
-    border-radius: 0 0 94% 97%/0  0 50% 50%;
-
- 
+.container-fluid{
+    position: relative;
+}
+.container-fluid::before{
+    clip-path: ellipse(53% 100% at 50% 0%);
+    content: "";
+   width:100%;
+   height:10vh;
+   left:0;
+    position:absolute;
+    background-color:white;
+    top: 0px;
+}
+.container-fluid1{
+    border: none;
+    position: relative;
+}
+.container-fluid1::before{
+    clip-path: ellipse(53% 100% at 50% 0%);
+    content: "";
+   width:100%;
+   height:10vh;
+   left:0;
+    position:absolute;
+    background-color:rgb(204, 239, 253);
+    top: 0px;
 }
 .card i{
     font-size: 2rem;
@@ -25,6 +48,9 @@ position: relative;
 margin:1.5rem 0rem;
 cursor: pointer;
 
+}
+.main-box{
+    width:100%;
 }
 .hero img{
     border-radius: 8px;
@@ -70,6 +96,17 @@ ul{
 .card-shadow{
     box-shadow: 0px 3px 10px rgba(0 0 0 /0.3);
 }
+.icons1{
+    
+    color: rgb(0, 68, 255);
+    padding: 1rem;
+    background-color: rgb(199, 237, 252);
+    border-radius: 50px;
+}
+.dropdown-menu{
+    left: -200px !important;;
+    border: 0px;
+}
 @media only screen and (max-width:768px)
 {
     .container2{
@@ -101,4 +138,16 @@ ul{
 .icons i{
     margin:0.2rem;
     font-size: 1.4rem;
+background-color: rgb(58, 60, 66);
+}
+.box h5{
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+.dropdown-menu{
+    box-shadow: 0px 3px 6px grey;
+    border: none;
+}
+.box ul li a{
+    font-size: 0.9rem;
 }
