@@ -118,6 +118,9 @@ ul{
     .cards{
         margin:1rem 0rem;
     }
+    .footer{
+        padding: 0rem !important;;
+    }
  
 }
 .col-12 h5{
